@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-exec(open("pydslib/version.py").read())
+exec(open("pydslib/__version__.py").read())
 
 setup(
     name='pydslib',
