@@ -1,0 +1,21 @@
+language: python
+os: linux
+branches:
+    only:
+        - master
+        - /^travis.*$/
+install:
+    - python --version
+script:
+    - python setup.py install
+    - python -m pytest -s
+matrix:
+  include:
+    - os: linux
+      before_install:
+        - pyenv global 3.6.7
+    - os: windows
+      before_install:
+        - choco install python --version 3.7.6
+      env: 
+        - PATH=/c/Python37:/c/Python37/Scripts:$PATH
