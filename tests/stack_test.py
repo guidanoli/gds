@@ -1,5 +1,5 @@
 import pytest
-from pydslib import stack
+from gds import stack
 
 def test_empty_stack():
 	s = stack.Stack()

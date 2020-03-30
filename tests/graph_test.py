@@ -1,4 +1,4 @@
-from pydslib import graph
+from gds import graph
 
 def test_empty_graph():
 	g = graph.DirectedGraph()

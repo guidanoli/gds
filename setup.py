@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-exec(open("pydslib/__version__.py").read())
-github_page = 'https://github.com/guidanoli/pydslib'
+exec(open("gds/__version__.py").read())
+github_page = 'https://github.com/guidanoli/gds'
 
 setup(
-	name='pydslib',
+	name='gds',
 	description='A collection of well known data structures'
 				' implemented in Python.',
 	keywords = ['data structures', 'graph'],
@@ -15,7 +15,7 @@ setup(
 	download_url=github_page+'/archive/'+__version__+'.tar.gz',
 	license='MIT',
 	
-	packages=["pydslib"],
+	packages=["gds"],
 	version=__version__,
 	long_description=open('README.rst').read(),
 	
