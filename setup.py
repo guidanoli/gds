@@ -10,7 +10,7 @@ setup(
     author_email='guidanoli@hotmail.com',
     
 	description='A collection of well known data structures'
-				'implemented in Python.',
+				' implemented in Python.',
 	long_description=open('README.rst').read(),
 	url='https://github.com/guidanoli/pydslib',
     license='MIT',
