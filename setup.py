@@ -5,23 +5,27 @@ exec(open("pydslib/__version__.py").read())
 
 setup(
     name='pydslib',
-    version=__version__,
-    author='Guilherme Dantas',
-    author_email='guidanoli@hotmail.com',
-    
 	description='A collection of well known data structures'
 				' implemented in Python.',
-	long_description=open('README.rst').read(),
+	keywords = ['data structures', 'graph'],
+    author='Guilherme Dantas',
+    author_email='guidanoli@hotmail.com',
 	url='https://github.com/guidanoli/pydslib',
     license='MIT',
 	
     packages=["pydslib"],
+    version=__version__,
+	long_description=open('README.rst').read(),
 	
 	classifiers=[
+		'Development Status :: 3 - Alpha',
+		'Intended Audience :: Developers',
 		'License :: OSI Approved :: MIT License',
-		'Programming Language :: Python',
 		'Programming Language :: Python :: 3',
-		'Programming Language :: Python :: Implementation :: CPython',
-	]
+		'Programming Language :: Python :: 3.5',
+		'Programming Language :: Python :: 3.6',
+		'Programming Language :: Python :: 3.7',
+		'Programming Language :: Python :: 3.8',
+	],
 )
 
