@@ -2,19 +2,21 @@
 from setuptools import setup, find_packages
 
 exec(open("pydslib/__version__.py").read())
+github_page = 'https://github.com/guidanoli/pydslib'
 
 setup(
-    name='pydslib',
+	name='pydslib',
 	description='A collection of well known data structures'
 				' implemented in Python.',
 	keywords = ['data structures', 'graph'],
-    author='Guilherme Dantas',
-    author_email='guidanoli@hotmail.com',
-	url='https://github.com/guidanoli/pydslib',
-    license='MIT',
+	author='Guilherme Dantas',
+	author_email='guidanoli@hotmail.com',
+	url=github_page,
+	download_url=github_page+'/archive/'+__version__+'.tar.gz',
+	license='MIT',
 	
-    packages=["pydslib"],
-    version=__version__,
+	packages=["pydslib"],
+	version=__version__,
 	long_description=open('README.rst').read(),
 	
 	classifiers=[
